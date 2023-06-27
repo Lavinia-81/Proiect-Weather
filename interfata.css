@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0; 
+   background-image: url(https://images.unsplash.com/photo-1685540256938-f02082efaa25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzMXxGem8zenVPSE42d3x8ZW58MHx8fHx8&auto=format&fit=crop&w=1600&q=60);
+    background-repeat: no-repeat;
+
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b44e0d0;;
+    color: white;
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    display: block;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(145, 145, 241);
+}
+
+
+@media (max-width: 400px) {
+    
+
+    .navbar-links {
+        /*display: none; */
+        width: 100%;
+    }
+
+    .navbar {
+       flex-direction: column;
+       align-items: flex-start; 
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.card {
+    background: #645959d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 3em;
+}
+
+.serch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    /*background-color: #8a5e5e2b;
+    color: #fff;  */
+    font-size: 105%;
+    width: calc(100%-50px);
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.6em;
+    width: 2.6em;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2sec ease-in-out;
+    
+}
+
+button:hover {
+    background: #e1cfcf
+    }
+
+  
+    
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+
+footer {
+    background-color: #6b44e0d0;
+    color: white;
+    padding: 0.2em;
+    text-align: center;
+    margin-top: auto;
+
+    
+}
+
